@@ -1,0 +1,2 @@
+split,experiment_tag,RMSE,MAE,CC
+test,fanbeats_interpretable_lb96_h96,112.67109937499654,88.79395392038731,0.08085963953408275
