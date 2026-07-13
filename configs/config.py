@@ -56,6 +56,10 @@ VAL_FILE = "dataset/solar_wind_speed_val_df.csv"
 TEST_FILE = "dataset/solar_wind_speed_test_df.csv"
 
 
-def make_experiment_tag(mode: str, lookback: int, horizon: int) -> str:
+def make_experiment_tag(mode: str, lookback: int, horizon: int, seed: int) -> str:
     """Build a compact experiment tag for filenames."""
-    return f"fanbeats_{mode}_lb{lookback}_h{horizon}"
+    if seed == 32:
+        return f"fanbeats_{mode}_lb{lookback}_h{horizon}"
+        
+    else: #changing the tag name based on the seed value to ensure reproducibility and clarity in experiment tracking
+        return f"fanbeats_{mode}_lb{lookback}_h{horizon}_seed{seed}"

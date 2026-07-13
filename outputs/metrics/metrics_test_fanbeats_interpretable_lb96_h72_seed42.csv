@@ -1,0 +1,2 @@
+split,experiment_tag,RMSE,MAE,CC
+test,fanbeats_interpretable_lb96_h72_seed42,111.25290846574258,87.41731808241902,0.1676800392330885
